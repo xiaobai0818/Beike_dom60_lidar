@@ -1,0 +1,2 @@
+starros  默认使用的是x86平台的so
+如使用arm的请将sdk库中对应的so拷贝至starros_ros1\3rdparty\sdk\lib下

@@ -1,0 +1,50 @@
+# 设备型号
+model: "RFans"
+
+# 坐标系名称
+frame_id: "world"
+pointcloud_topic: "points_raw"
+
+# 设备IP、数据包端口、控制端口、心跳包端口、转速
+device_ip: "192.168.0.10"
+data_port: 2014
+heart_port: 2030
+isf_header_port: 11000
+scan_speed: 10
+
+time_sync: true
+
+# 回放路径
+pcap_path: ""
+isf_path: ""
+
+# 设备数据协议
+data_proto: 0x0715
+
+# 设备标定参数文件路径
+cfg_path: ""
+
+# 是否使用外参
+extrinsin_enable: false
+
+# 外参旋转 单位：°
+extrinsic_yaw: 0
+extrinsic_pitch: 0
+extrinsic_roll: 0
+
+# 外参平移 单位：m
+extrinsic_tx: 0
+extrinsic_ty: 0
+extrinsic_tz: 0
+
+# 保存ISF格式点云,点云保存路径
+save_isf: false
+save_isf_path: ""
+
+## 算法相关配置
+# 是否使用算法
+use_algorithm: true
+
+# 自定义算法(仅在use_algorithm为true可用)
+Level1Q: true
+LevelAI: true

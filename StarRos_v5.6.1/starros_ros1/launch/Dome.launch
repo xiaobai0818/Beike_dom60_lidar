@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<launch>
+
+  <node pkg="starros" type="driver_node" name="dome_driver" output="screen">
+    <param name="config_path" value="/launch/config/Dome.yaml"/>
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" args=" -d $(find starros)/rviz/singleRviz.rviz" output="screen"/>
+</launch>
